@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KaveeN Portfolio</title>
-    <link rel="stylesheet" href="/assets/stylesheet/homepage.css" />
     <meta
       name="description"
       content="This is the homepage of the KaveeN portfolio"
@@ -13,332 +11,401 @@
       name="keywords"
       content="HTML, CSS, html, JavaScript, JS, KaveeN, portfolio, web developer, Dimantha, Kaveen, Dimantha Kaveen, KaveeN.com, kaveen.com"
     />
-    <title>Dimantha KaveeN's personal Portfolio</title>
+    <title>KaveeN Portfolio</title>
+    <link rel="stylesheet" href="/assets/stylesheet/homepage.css" />
     <link rel="icon" href="/assets/images/KaveeN.jpg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div>
-        <h4>
-          <i>Dimantha <span style="color: orange">KaveeN</span></i>
+    <header class="main-header">
+      <div class="header-container">
+        <h4 class="logo">
+          <i>Dimantha <span class="accent">KaveeN</span></i>
         </h4>
-        <nav>
-          <ul>
-            <li><i class="fa-solid fa-house"></i><a href="#home"> Home</a></li>
-            <li>
-              <i class="fa-solid fa-clipboard-list"></i
-              ><a href="#resume"> Resume</a>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <i class="fa-solid fa-house nav-icon"></i>
+              <a href="#home" class="nav-link">Home</a>
             </li>
-            <li>
-              <i class="fa-solid fa-briefcase"></i><a href="#work"> Work</a>
+            <li class="nav-item">
+              <i class="fa-solid fa-clipboard-list nav-icon"></i>
+              <a href="#resume" class="nav-link">Resume</a>
             </li>
-            <li>
-              <i class="fa-solid fa-address-book"></i
-              ><a href="#contact"> Contact</a>
+            <li class="nav-item">
+              <i class="fa-solid fa-briefcase nav-icon"></i>
+              <a href="#work" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-address-book nav-icon"></i>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-      <div>
-        <img
-          src="/assets/images/KaveeN.jpg"
-          alt="KaveeN Profile Picture"
-          style="width: 300px; height: 300px; object-fit: cover"
-          title="Dimantha KaveeN"
-        />
-        <br />
-        <h3>Dimantha KaveeN</h3>
-        <p>SE Undergraduate</p>
-        <a
-          href="https://www.facebook.com/profile.php?id=61550196402141"
-          target="_blank"
-          title="Facebook"
-        >
-          <i
-            class="fa-brands fa-facebook"
-            style="color: blue; font-size: 24px"
-          ></i>
-        </a>
-        <a
-          href="https://x.com/kaveen_69?t=32vAjHynsEWVjVswwT3YLw&s=35"
-          target="_blank"
-          title="Twitter"
-        >
-          <i
-            class="fa-brands fa-x-twitter"
-            style="color: blue; font-size: 24px"
-          ></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/dimantha-kaveen-a843092b5/?trk=PROFILE_DROP_DOWN"
-          target="_blank"
-          title="LinkedIn"
-        >
-          <i
-            class="fa-brands fa-linkedin"
-            style="color: blue; font-size: 24px"
-          ></i>
-        </a>
-        <a href="https://github.com/KaveenDK" target="_blank" title="GitHub">
-          <i
-            class="fa-brands fa-github"
-            style="color: black; font-size: 24px"
-          ></i>
-        </a>
-        <p>
-          <span style="color: orange"><i class="fa-solid fa-mobile"></i></span>
-          Phone - +94 76 2900 250
-        </p>
-        <p>
-          <span style="color: orange"
-            ><i class="fa-solid fa-envelope"></i
-          ></span>
-          Email - vpdkkaveen@gmail.com
-        </p>
-        <p>
-          <span style="color: orange"
-            ><i class="fa-solid fa-location-dot"></i
-          ></span>
-          Location - Karapitiya, Galle
-        </p>
-        <button onclick="alert('Downloading Resume')">
-          <span style="color: orange"
-            ><i class="fa-solid fa-download"></i> Download Resume</span
-          >
-        </button>
+    <!-- Profile Sidebar -->
+    <aside class="profile-sidebar">
+      <img
+        src="/assets/images/KaveeN.jpg"
+        class="profile-img"
+        alt="Dimantha KaveeN"
+        title="Profile Picture"
+      />
+
+      <div class="profile-info">
+        <h3 class="profile-name">Dimantha KaveeN</h3>
+        <p class="profile-title">SE Undergraduate</p>
       </div>
 
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/profile.php?id=61550196402141"
+          class="social-link"
+          target="_blank"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://x.com/kaveen_69" class="social-link" target="_blank">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dimantha-kaveen-a843092b5"
+          class="social-link"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/KaveenDK"
+          class="social-link"
+          target="_blank"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-mobile-alt accent"></i>
+          <span>+94 76 2900 250</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope accent"></i>
+          <span>vpdkkaveen@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt accent"></i>
+          <span>Karapitiya, Galle</span>
+        </div>
+      </div>
+
+      <button class="download-btn">
+        <i class="fas fa-download"></i>
+        Download Resume
+      </button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
       <!-- Home Section -->
-      <section id="home">
-        <h1>
-          ABOUT ME <span style="color: orange">--------------------</span>
+      <section id="home" class="content-section">
+        <h1 class="section-heading">
+          ABOUT ME
+          <span class="heading-line"></span>--------------------
         </h1>
-        <p>
+        <p class="about-text">
           Hello there! I'm thrilled to welcome you to my portfolio. I am
           Dimantha Kaveen, a passionate and versatile SE undergraduate at IJSE
           with a strong focus on Java, MySQL, HTML, CSS, JavaScript, TypeScript,
-          and a keen interest in game and web development. My journey in the
-          world of technology has been nothing short of exhilarating, and I
-          constantly strive to enhance my skills while embracing emerging trends
-          in both frontend and backend development. I am always eager to explore
-          the latest cutting-edge technologies and take on exciting challenges
-          in the industry.
+          and a keen interest in game and web development.
         </p>
-        <h2>What I do!</h2>
-        <h3>
-          <span style="color: orange"><i class="fa-solid fa-code"></i></span>
-          Web Development
-        </h3>
-        <p>
-          As a developer, I find myself most captivated by the power and
-          flexibility of NEXT.js. I'm always eager to dive into new projects
-          that leverage NEXT.js and discover innovative ways to create fast,
-          scalable, and user-friendly applications.
-        </p>
-        <h3>
-          <span style="color: orange"><i class="fa-brands fa-dev"></i></span>
-          App Development
-        </h3>
-        <p>
-          With a focus on user-centric design and cutting-edge technologies, I
-          thrive on building intuitive and efficient apps that make a positive
-          impact on people's lives. Let's turn ideas into reality and shape the
-          future together.
-        </p>
-        <h3>
-          <span style="color: orange"><i class="fa-solid fa-image"></i></span>
-          UI/UX Designing
-        </h3>
-        <p>
-          Crafting visually appealing and intuitive user interfaces that offer a
-          delightful user experience is something I'm truly fanatic about.
-        </p>
-        <h3>
-          <span style="color: orange"><i class="fa-solid fa-gamepad"></i></span>
-          Game Development
-        </h3>
-        <p>
-          I’m diving into Java and game development, passionate about building
-          skills in frontend and backend tech. Game dev lets me combine
-          creativity with technical challenges
-        </p>
+
+        <h2 class="section-subheading">What I do!</h2>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 class="service-title">
+              <i class="fas fa-code accent"></i>
+              Web Development
+            </h3>
+            <p class="service-description">
+              As a developer, I find myself most captivated by the power and
+              flexibility of NEXT.js. I'm always eager to dive into new projects
+              that leverage NEXT.js and discover innovative ways to create fast,
+              scalable, and user-friendly applications.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">
+              <i class="fa-brands fa-dev"></i>
+              App Development
+            </h3>
+            <p class="service-description">
+              With a focus on user-centric design and cutting-edge technologies,
+              I thrive on building intuitive and efficient apps that make a
+              positive impact on people's lives. Let's turn ideas into reality
+              and shape the future together.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">
+              <i class="fa-solid fa-image"></i>
+              UI/UX Designing
+            </h3>
+            <p class="service-description">
+              Crafting visually appealing and intuitive user interfaces that
+              offer a delightful user experience is something I'm truly fanatic
+              about.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">
+              <i class="fa-solid fa-gamepad"></i>
+              Game Development
+            </h3>
+            <p class="service-description">
+              I’m diving into Java and game development, passionate about
+              building skills in frontend and backend tech. Game dev lets me
+              combine creativity with technical challenges
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- Resume Section -->
-      <section id="resume">
-        <h1>Resume <span style="color: orange">--------------------</span></h1>
-        <div>
-          <h3>
-            <span style="color: orange"
-              ><i class="fa-solid fa-graduation-cap"></i
-            ></span>
-            Education
-          </h3>
-          <p><span style="color: silver">2024-2026</span></p>
-          <p><b>Software Engineering</b></p>
-          <p>
-            <span style="color: black"
-              >IJSE| Institute of Software Engineering</span
-            >
-          </p>
-          <br />
-          <p><span style="color: silver">2025</span></p>
-          <p><b>Web Development</b></p>
-          <p>
-            <span style="color: black"
-              >IJSE| Institute of Software Engineering</span
-            >
-          </p>
-          <h3>
-            <span style="color: orange"
-              ><i class="fa-solid fa-briefcase"></i
-            ></span>
-            Experience
-          </h3>
-          <p><span style="color: silver">2025-Present</span></p>
-          <p><b>UI/UX Designing</b></p>
-          <p>
-            <span style="color: black"
-              >IJSE| Institute of Software Engineering</span
-            >
-          </p>
-          <br />
-          <p><span style="color: silver">2025-Present</span></p>
-          <p><b>Website Development</b></p>
-          <p>
-            <span style="color: black"
-              >IJSE| Institute of Software Engineering</span
-            >
-          </p>
-          <br />
-          <h3>Work Skills</h3>
-          <p>Java MySQL HTML5</p>
-          <p>CSS3 JavaScript Figma</p>
-          <p>TypeScript MongoDB SQL</p>
-          <p>Blender Photoshop Git</p>
-          <h3>Soft Skills</h3>
-          <p>Time Management</p>
-          <p>Mentorship Flexibility</p>
-          <p>Impeccable Communication</p>
-          <p>Research Writing</p>
+      <section id="resume" class="content-section">
+        <h1 class="section-heading">
+          RESUME
+          <span class="heading-line"></span>--------------------
+        </h1>
+
+        <div class="resume-grid">
+          <!-- Education Column -->
+          <div class="resume-column">
+            <div class="resume-item">
+              <div class="resume-header">
+                <i class="fas fa-graduation-cap accent"></i>
+                <h2 class="resume-title">Education</h2>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">2024 - 2026</span>
+                  <h3 class="timeline-title">Software Engineering</h3>
+                  <p class="timeline-location">
+                    IJSE | Institute of Software Engineering
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2025</span>
+                  <h3 class="timeline-title">Web Development</h3>
+                  <p class="timeline-location">
+                    IJSE | Institute of Software Engineering
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-column">
+            <div class="resume-item">
+              <div class="resume-header">
+                <i class="fas fa-briefcase accent"></i>
+                <h2 class="resume-title">Experience</h2>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">2025 - Present</span>
+                  <h3 class="timeline-title">UI/UX Designer</h3>
+                  <p class="timeline-location">
+                    IJSE | Institute of Software Engineering
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2025 - Present</span>
+                  <h3 class="timeline-title">Web Developer</h3>
+                  <p class="timeline-location">
+                    IJSE | Institute of Software Engineering
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <div class="skills-column">
+            <h3 class="skills-heading">Technical Skills</h3>
+            <div class="skills-grid">
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">Figma</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">Photoshop</span>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3 class="skills-heading">Soft Skills</h3>
+            <div class="skills-grid">
+              <span class="skill-badge soft">Time Management</span>
+              <span class="skill-badge soft">Mentorship</span>
+              <span class="skill-badge soft">Flexibility</span>
+              <span class="skill-badge soft">Communication</span>
+              <span class="skill-badge soft">Research</span>
+              <span class="skill-badge soft">Writing</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Work Section -->
-      <section id="work">
-        <h1>
-          Portfolio <span style="color: orange">--------------------</span>
+      <section id="work" class="content-section">
+        <h1 class="section-heading">
+          PORTFOLIO
+          <span class="heading-line"></span>--------------------
         </h1>
-        <p>
-          <span style="color: orange">All</span> AppDevelopment WebDevelopment
-          Design GameDevelopment
-        </p>
-        <img
-          src="/assets/images/Smart_Bank_App.jpg"
-          alt="Smart Bank App"
-          style="width: 300px; height: 300px; object-fit: cover"
-          title="Smart Bank App"
-        />
-        <p><span style="color: silver">App Development</span></p>
-        <p><span style="color: black">Smart Bank App</span></p>
-        <br />
 
-        <img
-          src="/assets/images/Java_Blog.jpg"
-          alt="Java Blog"
-          style="width: 300px; height: 300px; object-fit: cover"
-          title="Java Blog"
-        />
-        <p><span style="color: silver">Blog</span></p>
-        <p><span style="color: black">Java</span></p>
-        <br />
+        <div class="portfolio-filter">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">App Development</button>
+          <button class="filter-btn">Web Development</button>
+          <button class="filter-btn">Game Development</button>
+        </div>
 
-        <img
-          src="/assets/images/SuperMarket_UIUX.jpg"
-          alt="Smart Bank App"
-          style="width: 300px; height: 300px; object-fit: cover"
-          title="Super Market Website"
-        />
-        <p><span style="color: silver">UI/UX</span></p>
-        <p><span style="color: black">Super Marker</span></p>
-        <br />
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img
+              src="/assets/images/Smart_Bank_App.jpg"
+              class="portfolio-image"
+              alt="Smart Bank App"
+              loading="lazy"
+            />
+            <div class="portfolio-info">
+              <p class="portfolio-category">App Development</p>
+              <h4 class="portfolio-title">Smart Bank App</h4>
+            </div>
+          </div>
 
-        <img
-          src="/assets/images/GtaV By KaveeN.jpg"
-          alt="Car Game"
-          style="width: 300px; height: 300px; object-fit: cover"
-          title="GtaV By KaveeN"
-        />
-        <p><span style="color: silver">Game Development</span></p>
-        <p><span style="color: black">Car Game</span></p>
-        <br />
+          <div class="portfolio-item">
+            <img
+              src="/assets/images/Java_Blog.jpg"
+              class="portfolio-image"
+              alt="Java Programming Blog"
+              loading="lazy"
+            />
+            <div class="portfolio-info">
+              <p class="portfolio-category">Blog</p>
+              <h3 class="portfolio-title">Java Programming</h3>
+            </div>
+          </div>
 
-        <img
-          src="/assets/images/WebDevelopment.jpg"
-          alt="Coding"
-          style="width: 300px; height: 300px; object-fit: cover"
-          title="Web Development Coding"
-        />
-        <p><span style="color: silver">Web Development</span></p>
-        <p><span style="color: black">IdeaFlow</span></p>
-        <br />
+          <div class="portfolio-item">
+            <img
+              src="/assets/images/SuperMarket_UIUX.jpg"
+              class="portfolio-image"
+              alt="Super Market UI Design"
+              loading="lazy"
+            />
+            <div class="portfolio-info">
+              <p class="portfolio-category">UI/UX Design</p>
+              <h3 class="portfolio-title">Super Market</h3>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="/assets/images/GtaV By KaveeN.jpg"
+              class="portfolio-image"
+              alt="Car Game Development"
+              loading="lazy"
+            />
+            <div class="portfolio-info">
+              <p class="portfolio-category">Game Development</p>
+              <h3 class="portfolio-title">Car Game</h3>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="/assets/images/WebDevelopment.jpg"
+              class="portfolio-image"
+              alt="Web Development Project"
+              loading="lazy"
+            />
+            <div class="portfolio-info">
+              <p class="portfolio-category">Web Development</p>
+              <h3 class="portfolio-title">IdeaFlow</h3>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
-        <h1>Contact <span style="color: orange">--------------------</span></h1>
-        <p>
-          <span style="color: orange"><i class="fa-solid fa-mobile"></i></span>
-          Phone - +94 76 2900 250
-          <br />
-          +94 71 793 4962
-        </p>
-        <p>
-          <span style="color: orange"
-            ><i class="fa-solid fa-envelope"></i
-          ></span>
-          Email - vpdkkaveen@gmail.com
-        </p>
-        <br />
-        <form>
-          <p>
-            I am always open to discussing
-            <b>new projects, opportunities in tech world, partnerships</b> and
-            more so <b>mentorship.</b>
-          </p>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <br />
-          <hr />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <br />
-          <hr />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <br />
-          <hr />
-          <button type="submit">Submit</button>
-        </form>
+      <section id="contact" class="content-section">
+        <h1 class="section-heading">
+          CONTACT
+          <span class="heading-line"></span>--------------------
+        </h1>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-method">
+              <i class="fas fa-phone-alt accent"></i>
+              <div class="contact-details">
+                <p>+94 76 2900 250</p>
+                <p>+94 71 793 4962</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-envelope accent"></i>
+              <p>vpdkkaveen@gmail.com</p>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <p class="form-intro">
+              I am always open to discussing new projects, opportunities in tech
+              world, partnerships and more so mentorship.
+            </p>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                class="form-input message-input"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
       </section>
     </main>
-    <br />
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Dimantha KaveeN. All rights reserved.</p>
+    <footer class="main-footer">
+      <p class="copyright">&copy; 2025 Dimantha KaveeN. All rights reserved.</p>
     </footer>
   </body>
 </html>
