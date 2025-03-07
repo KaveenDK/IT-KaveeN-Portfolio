@@ -1,0 +1,101 @@
+/* Main Content */
+.main-content {
+  margin-left: 340px;
+  padding: 2rem;
+  margin-top: 60px;
+}
+
+.content-section {
+  max-width: 1200px;
+  margin-bottom: 4rem;
+  padding: 3rem 2rem;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section-heading::after {
+  content: '';
+  flex-grow: 1;
+  height: 4px;
+  background: #FF9C1A;
+  margin-left: 50px;
+  max-width: 500px;
+}
+
+.heading-line {
+  display: none;
+}
+
+.section-subheading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-title .accent {
+  margin-right: 0.5rem;
+  color: #FF9C1A;
+}
+
+.service-description {
+  font-size: 1rem;
+}
+
+/* Specific Service Cards */
+.service-card.web-development,
+.service-card.game-development {
+  background: #FFEBD1;
+  color: #2B2B2B;
+}
+
+.service-card.web-development .service-title .accent,
+.service-card.game-development .service-title .accent {
+  color: #FF9C1A;
+}
+
+.service-card.web-development .service-description,
+.service-card.game-development .service-description {
+  color: #2B2B2B;
+}

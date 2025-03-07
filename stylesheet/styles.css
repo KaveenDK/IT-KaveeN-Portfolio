@@ -1,0 +1,260 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #F2F5F9;
+  color: #2B2B2B;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Header */
+.main-header {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #2B2B2B;
+}
+
+.logo .accent {
+  color: #FF9C1A;
+}
+
+.main-nav .nav-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2B2B2B;
+  font-size: 1rem;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: white;
+  background-color: #FF9C1A;
+}
+
+.nav-icon {
+  margin-right: 0.5rem;
+}
+
+/* Night Mode Toggle */
+.night-mode-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #2B2B2B;
+  transition: color 0.3s;
+}
+
+.night-mode-toggle:hover {
+  color: #FF9C1A;
+}
+
+/* Night Mode */
+body.night-mode {
+  background: #2B2B2B;
+  color: #F2F5F9;
+}
+
+body.night-mode .main-header {
+  background: #333;
+}
+
+body.night-mode .nav-link {
+  color: #F2F5F9;
+}
+
+body.night-mode .nav-link:hover {
+  color: #FF9C1A;
+}
+
+/* Sidebar Profile */
+.profile-sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  width: 340px;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1.5rem;
+  object-fit: cover;
+  border: 5px solid #FF9C1A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #2B2B2B;
+}
+
+.profile-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #F2F5F9;
+  color: #333;
+  font-size: 16px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: #FF9C1A;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Contact Information */
+.contact-info {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item i {
+  color: #FF9C1A;
+  font-size: 16px;
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #FF9C1A;
+}
+
+/* Resume Download Button */
+.download-btn {
+  width: 100%; 
+  max-width: 200px; 
+  background: linear-gradient(to right, #FF9C1A, #EC1B09); 
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto; 
+}
+
+.download-btn:hover {
+  background: linear-gradient(to right, #EC1B09, #FF9C1A); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #777;
+}

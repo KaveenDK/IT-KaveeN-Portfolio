@@ -12,8 +12,23 @@
       content="HTML, CSS, html, JavaScript, JS, KaveeN, portfolio, web developer, Dimantha, Kaveen, Dimantha Kaveen, KaveeN.com, kaveen.com"
     />
     <title>KaveeN Portfolio</title>
-    <link rel="stylesheet" href="/assets/stylesheet/homepage.css" />
     <link rel="icon" href="/assets/images/KaveeN.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+    <link rel="stylesheet" href="stylesheet/homepage.css" />
+    <link rel="stylesheet" href="stylesheet/resumepage.css" />
+    <link rel="stylesheet" href="stylesheet/workpage.css" />
+    <link rel="stylesheet" href="stylesheet/contactpage.css" />
   </head>
   <body>
     <!-- Header -->
@@ -25,28 +40,36 @@
         <nav class="main-nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <i class="fa-solid fa-house nav-icon"></i>
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link" data-section="home">
+                <i class="fa-solid fa-house nav-icon"></i> Home
+              </a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-clipboard-list nav-icon"></i>
-              <a href="#resume" class="nav-link">Resume</a>
+              <a href="#resume" class="nav-link" data-section="resume">
+                <i class="fa-solid fa-clipboard-list nav-icon"></i> Resume
+              </a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-briefcase nav-icon"></i>
-              <a href="#work" class="nav-link">Work</a>
+              <a href="#work" class="nav-link" data-section="work">
+                <i class="fa-solid fa-briefcase nav-icon"></i> Work
+              </a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-address-book nav-icon"></i>
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link" data-section="contact">
+                <i class="fa-solid fa-address-book nav-icon"></i> Contact
+              </a>
             </li>
           </ul>
         </nav>
+        <div class="night-mode-toggle">
+          <i class="fas fa-moon"></i>
+        </div>
       </div>
     </header>
 
     <!-- Profile Sidebar -->
     <aside class="profile-sidebar">
+      <!-- Profile Image -->
       <img
         src="/assets/images/KaveeN.jpg"
         class="profile-img"
@@ -54,26 +77,38 @@
         title="Profile Picture"
       />
 
-      <div class="profile-info">
+      <!-- Profile Info -->
+      <header class="profile-info">
         <h3 class="profile-name">Dimantha KaveeN</h3>
         <p class="profile-title">SE Undergraduate</p>
-      </div>
+      </header>
 
-      <div class="social-links">
+      <!-- Social Links -->
+      <nav class="social-links">
         <a
           href="https://www.facebook.com/profile.php?id=61550196402141"
           class="social-link"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook Profile"
         >
           <i class="fab fa-facebook"></i>
         </a>
-        <a href="https://x.com/kaveen_69" class="social-link" target="_blank">
+        <a
+          href="https://x.com/kaveen_69"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter Profile"
+        >
           <i class="fab fa-x-twitter"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/dimantha-kaveen-a843092b5"
           class="social-link"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn Profile"
         >
           <i class="fab fa-linkedin"></i>
         </a>
@@ -81,27 +116,33 @@
           href="https://github.com/KaveenDK"
           class="social-link"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profile"
         >
           <i class="fab fa-github"></i>
         </a>
-      </div>
+      </nav>
 
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-mobile-alt accent"></i>
-          <span>+94 76 2900 250</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-envelope accent"></i>
-          <span>vpdkkaveen@gmail.com</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt accent"></i>
-          <span>Karapitiya, Galle</span>
-        </div>
-      </div>
+      <!-- Contact Information -->
+      <address class="contact-info">
+        <ul>
+          <li class="contact-item">
+            <i class="fas fa-mobile-alt accent"></i>
+            <span>+94 76 2900 250</span>
+          </li>
+          <li class="contact-item">
+            <i class="fas fa-envelope accent"></i>
+            <a href="mailto:vpdkkaveen@gmail.com">vpdkkaveen@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <i class="fas fa-map-marker-alt accent"></i>
+            <span>Karapitiya, Galle</span>
+          </li>
+        </ul>
+      </address>
 
-      <button class="download-btn">
+      <!-- Resume Download Button -->
+      <button class="download-btn" type="button">
         <i class="fas fa-download"></i>
         Download Resume
       </button>
@@ -113,19 +154,24 @@
       <section id="home" class="content-section">
         <h1 class="section-heading">
           ABOUT ME
-          <span class="heading-line"></span>--------------------
+          <span class="heading-line"></span>
         </h1>
         <p class="about-text">
           Hello there! I'm thrilled to welcome you to my portfolio. I am
           Dimantha Kaveen, a passionate and versatile SE undergraduate at IJSE
           with a strong focus on Java, MySQL, HTML, CSS, JavaScript, TypeScript,
-          and a keen interest in game and web development.
+          and a keen interest in game and web development. My journey in the
+          world of technology has been nothing short of exhilarating, and I
+          constantly strive to enhance my skills while embracing emerging trends
+          in both frontend and backend development. I am always eager to explore
+          the latest cutting-edge technologies and take on exciting challenges
+          in the industry.
         </p>
 
         <h2 class="section-subheading">What I do!</h2>
 
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card web-development">
             <h3 class="service-title">
               <i class="fas fa-code accent"></i>
               Web Development
@@ -140,7 +186,7 @@
 
           <div class="service-card">
             <h3 class="service-title">
-              <i class="fa-brands fa-dev"></i>
+              <i class="fa-brands fa-dev accent"></i>
               App Development
             </h3>
             <p class="service-description">
@@ -153,7 +199,7 @@
 
           <div class="service-card">
             <h3 class="service-title">
-              <i class="fa-solid fa-image"></i>
+              <i class="fa-solid fa-image accent"></i>
               UI/UX Designing
             </h3>
             <p class="service-description">
@@ -163,15 +209,15 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card game-development">
             <h3 class="service-title">
-              <i class="fa-solid fa-gamepad"></i>
+              <i class="fa-solid fa-gamepad accent"></i>
               Game Development
             </h3>
             <p class="service-description">
               I’m diving into Java and game development, passionate about
               building skills in frontend and backend tech. Game dev lets me
-              combine creativity with technical challenges
+              combine creativity with technical challenges.
             </p>
           </div>
         </div>
@@ -181,61 +227,62 @@
       <section id="resume" class="content-section">
         <h1 class="section-heading">
           RESUME
-          <span class="heading-line"></span>--------------------
+          <span class="heading-line"></span>
         </h1>
 
         <div class="resume-grid">
           <!-- Education Column -->
           <div class="resume-column">
-            <div class="resume-item">
-              <div class="resume-header">
-                <i class="fas fa-graduation-cap accent"></i>
-                <h2 class="resume-title">Education</h2>
+            <div class="resume-header">
+              <i class="fas fa-graduation-cap accent"></i>
+              <h2 class="resume-title">Education</h2>
+            </div>
+
+            <div class="resume-box education-1">
+              <div class="timeline-item">
+                <span class="timeline-date">2024 - 2026</span>
+                <h3 class="timeline-title">Software Engineering</h3>
+                <p class="timeline-location">
+                  IJSE | Institute of Software Engineering
+                </p>
               </div>
+            </div>
 
-              <div class="timeline">
-                <div class="timeline-item">
-                  <span class="timeline-date">2024 - 2026</span>
-                  <h3 class="timeline-title">Software Engineering</h3>
-                  <p class="timeline-location">
-                    IJSE | Institute of Software Engineering
-                  </p>
-                </div>
-
-                <div class="timeline-item">
-                  <span class="timeline-date">2025</span>
-                  <h3 class="timeline-title">Web Development</h3>
-                  <p class="timeline-location">
-                    IJSE | Institute of Software Engineering
-                  </p>
-                </div>
+            <div class="resume-box education-2">
+              <div class="timeline-item">
+                <span class="timeline-date">2025</span>
+                <h3 class="timeline-title">Web Development</h3>
+                <p class="timeline-location">
+                  IJSE | Institute of Software Engineering
+                </p>
               </div>
             </div>
           </div>
 
+          <!-- Experience Column -->
           <div class="resume-column">
-            <div class="resume-item">
-              <div class="resume-header">
-                <i class="fas fa-briefcase accent"></i>
-                <h2 class="resume-title">Experience</h2>
+            <div class="resume-header">
+              <i class="fas fa-briefcase accent"></i>
+              <h2 class="resume-title">Experience</h2>
+            </div>
+
+            <div class="resume-box experience-1">
+              <div class="timeline-item">
+                <span class="timeline-date">2025 - Present</span>
+                <h3 class="timeline-title">UI/UX Designer</h3>
+                <p class="timeline-location">
+                  IJSE | Institute of Software Engineering
+                </p>
               </div>
+            </div>
 
-              <div class="timeline">
-                <div class="timeline-item">
-                  <span class="timeline-date">2025 - Present</span>
-                  <h3 class="timeline-title">UI/UX Designer</h3>
-                  <p class="timeline-location">
-                    IJSE | Institute of Software Engineering
-                  </p>
-                </div>
-
-                <div class="timeline-item">
-                  <span class="timeline-date">2025 - Present</span>
-                  <h3 class="timeline-title">Web Developer</h3>
-                  <p class="timeline-location">
-                    IJSE | Institute of Software Engineering
-                  </p>
-                </div>
+            <div class="resume-box experience-2">
+              <div class="timeline-item">
+                <span class="timeline-date">2025 - Present</span>
+                <h3 class="timeline-title">Web Developer</h3>
+                <p class="timeline-location">
+                  IJSE | Institute of Software Engineering
+                </p>
               </div>
             </div>
           </div>
@@ -243,7 +290,7 @@
 
         <div class="skills-section">
           <div class="skills-column">
-            <h3 class="skills-heading">Technical Skills</h3>
+            <h3 class="skills-heading">Work Skills</h3>
             <div class="skills-grid">
               <span class="skill-badge">Java</span>
               <span class="skill-badge">MySQL</span>
@@ -253,8 +300,10 @@
               <span class="skill-badge">TypeScript</span>
               <span class="skill-badge">Figma</span>
               <span class="skill-badge">MongoDB</span>
-              <span class="skill-badge">Git</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Blender</span>
               <span class="skill-badge">Photoshop</span>
+              <span class="skill-badge">Git</span>
             </div>
           </div>
 
@@ -263,8 +312,8 @@
             <div class="skills-grid">
               <span class="skill-badge soft">Time Management</span>
               <span class="skill-badge soft">Mentorship</span>
+              <span class="skill-badge soft">Impeccable Communication</span>
               <span class="skill-badge soft">Flexibility</span>
-              <span class="skill-badge soft">Communication</span>
               <span class="skill-badge soft">Research</span>
               <span class="skill-badge soft">Writing</span>
             </div>
@@ -276,7 +325,7 @@
       <section id="work" class="content-section">
         <h1 class="section-heading">
           PORTFOLIO
-          <span class="heading-line"></span>--------------------
+          <span class="heading-line"></span>
         </h1>
 
         <div class="portfolio-filter">
@@ -358,19 +407,19 @@
       <section id="contact" class="content-section">
         <h1 class="section-heading">
           CONTACT
-          <span class="heading-line"></span>--------------------
+          <span class="heading-line"></span>
         </h1>
 
         <div class="contact-container">
           <div class="contact-info">
-            <div class="contact-method">
+            <div class="contact-method phone">
               <i class="fas fa-phone-alt accent"></i>
               <div class="contact-details">
                 <p>+94 76 2900 250</p>
                 <p>+94 71 793 4962</p>
               </div>
             </div>
-            <div class="contact-method">
+            <div class="contact-method email">
               <i class="fas fa-envelope accent"></i>
               <p>vpdkkaveen@gmail.com</p>
             </div>

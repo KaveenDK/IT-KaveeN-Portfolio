@@ -1,0 +1,126 @@
+/* Resume Section */
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .resume-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .resume-box {
+    background: #FFEBD1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-box.education-1 {
+    background: #FFE3BF;
+  }
+  
+  .resume-box.education-2 {
+    background: #FFEED9;
+  }
+  
+  .resume-box.experience-1 {
+    background: #FFEED9;
+  }
+  
+  .resume-box.experience-2 {
+    background: #FFE3BF;
+  }
+  
+  .resume-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .resume-header i {
+    font-size: 1.5rem;
+    color: #FF9C1A;
+    margin-right: 0.5rem;
+  }
+  
+  .resume-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2B2B2B;
+  }
+  
+  .timeline {
+    margin-top: 1rem;
+  }
+  
+  .timeline-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-location {
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .skills-column {
+    flex: 1;
+  }
+  
+  .skills-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skill-badge {
+    background: #E1E8EF;
+    color: #2B2B2B;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .skill-badge.soft {
+    background: #E1E8EF;
+    color: #2B2B2B;
+  }
