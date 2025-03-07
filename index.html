@@ -64,11 +64,23 @@
         <div class="night-mode-toggle">
           <i class="fas fa-moon"></i>
         </div>
+        <!-- Burger Icon for Mobile -->
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
       </div>
     </header>
 
     <!-- Profile Sidebar -->
-    <aside class="profile-sidebar">
+    <aside class="profile-sidebar" id="profile-sidebar">
+      <nav class="menu-panel" id="menu-panel-id">
+        <button class="close-btn" id="btn-close">&times;</button>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
       <!-- Profile Image -->
       <img
         src="/assets/images/KaveeN.jpg"
@@ -456,5 +468,19 @@
     <footer class="main-footer">
       <p class="copyright">&copy; 2025 Dimantha KaveeN. All rights reserved.</p>
     </footer>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const profileSidebar = document.getElementById("profile-sidebar");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        profileSidebar.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        profileSidebar.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
