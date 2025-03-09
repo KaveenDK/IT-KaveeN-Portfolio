@@ -16,7 +16,12 @@
     background: #FFEBD1;
     padding: 2rem;
     border-radius: 10px;
+    transition: transform 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .resume-box:hover {
+    transform: translateY(-10px);
   }
   
   .resume-box.education-1 {
