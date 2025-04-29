@@ -1,0 +1,174 @@
+/* Night Mode */
+body.night-mode {
+    background: #2B2B2B;
+    color: #F2F5F9;
+  }
+  
+  /* Header */
+  body.night-mode .main-header {
+    background: #333;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.night-mode .nav-link {
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .nav-link:hover {
+    color: #FF9C1A;
+  }
+  
+  /* Sidebar Profile */
+  body.night-mode .profile-sidebar {
+    background: #333;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .profile-img {
+    border-color: #FF9C1A;
+  }
+  
+  body.night-mode .profile-name {
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .profile-title {
+    color: #AAA;
+  }
+  
+  /* Social Media Links */
+  body.night-mode .social-link {
+    background: #444;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .social-link:hover {
+    background: #FF9C1A;
+    color: #FFF;
+  }
+  
+  /* Content Sections */
+  body.night-mode .content-section {
+    background: #444;
+    color: #F2F5F9;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.night-mode .service-card {
+    background: #555;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .resume-box {
+    background: #555;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .skills-section {
+    background: #444;
+  }
+  
+  body.night-mode .skill-badge {
+    background: #555;
+    color: #F2F5F9;
+  }
+  
+  /* Portfolio */
+  body.night-mode .portfolio-item {
+    background: #555;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .portfolio-info {
+    color: #F2F5F9;
+  }
+  
+  /* Contact Section */
+  body.night-mode .contact-container {
+    background: #444;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .contact-info {
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.night-mode .contact-item {
+    border-bottom: 1px solid #555;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .contact-item:last-child {
+    border-bottom: none;
+  }
+  
+  body.night-mode .contact-item i {
+    color: #FF9C1A;
+  }
+  
+  body.night-mode .contact-item a {
+    color: #FF9C1A;
+    text-decoration: none;
+  }
+  
+  body.night-mode .contact-item a:hover {
+    color: #FFF;
+  }
+  
+  /* Contact Form */
+  body.night-mode .contact-form {
+    background: #555;
+    color: #F2F5F9;
+  }
+  
+  body.night-mode .form-input {
+    background: #444;
+    color: #F2F5F9;
+    border: 1px solid #777;
+  }
+  
+  body.night-mode .submit-btn {
+    background: #444;
+    color: #FF9C1A;
+    border-color: #FF9C1A;
+  }
+  
+  body.night-mode .submit-btn:hover {
+    background: #FF9C1A;
+    color: #FFF;
+  }
+  
+  /* Footer */
+  body.night-mode .main-footer {
+    background: #333;
+    color: #F2F5F9;
+  }
+
+  /* Night Mode Toggle */
+  .night-mode-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #FFF;
+    background: linear-gradient(135deg, #FF9C1A, #EC1B09);
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  .night-mode-toggle:hover {
+    background: linear-gradient(135deg, #EC1B09, #FF9C1A);
+    transform: scale(1.2) rotate(15deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .night-mode-toggle:active {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }

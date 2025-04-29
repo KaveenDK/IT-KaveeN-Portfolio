@@ -14,11 +14,16 @@ body {
   background: #F2F5F9;
   color: #2B2B2B;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Header */
@@ -44,7 +49,7 @@ h1, h2, h3, h4 {
 }
 
 .logo {
-  font-size: 1.2rem; /* Adjusted font size */
+  font-size: 1.2rem;
   color: #2B2B2B;
 }
 
@@ -122,36 +127,6 @@ h1, h2, h3, h4 {
 
 .menu-panel.active {
   right: 0;
-}
-
-/* Night Mode Toggle */
-.night-mode-toggle {
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: #2B2B2B;
-  transition: color 0.3s;
-}
-
-.night-mode-toggle:hover {
-  color: #FF9C1A;
-}
-
-/* Night Mode */
-body.night-mode {
-  background: #2B2B2B;
-  color: #F2F5F9;
-}
-
-body.night-mode .main-header {
-  background: #333;
-}
-
-body.night-mode .nav-link {
-  color: #F2F5F9;
-}
-
-body.night-mode .nav-link:hover {
-  color: #FF9C1A;
 }
 
 /* Sidebar Profile */
@@ -357,7 +332,7 @@ body.night-mode .nav-link:hover {
 /* Mobile Small = 320px */
 @media (max-width: 320px) {
   .logo {
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 1rem;
   }
   .main-content {
     margin-left: 0;
@@ -393,7 +368,7 @@ body.night-mode .nav-link:hover {
 /* Mobile Medium = 375px */
 @media (max-width: 375px) {
   .logo {
-    font-size: 1.1rem; /* Adjusted font size */
+    font-size: 1.1rem;
   }
   .main-content {
     margin-left: 0;
@@ -429,7 +404,7 @@ body.night-mode .nav-link:hover {
 /* Mobile Large = 425px */
 @media (max-width: 425px) {
   .logo {
-    font-size: 1.2rem; /* Adjusted font size */
+    font-size: 1.2rem;
   }
   .main-content {
     margin-left: 0;
@@ -465,7 +440,7 @@ body.night-mode .nav-link:hover {
 /* Tablet = 768px */
 @media (max-width: 768px) {
   .logo {
-    font-size: 1.3rem; /* Adjusted font size */
+    font-size: 1.3rem;
   }
   .main-content {
     margin-left: 0;

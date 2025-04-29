@@ -24,3 +24,24 @@ profileImgToggle.addEventListener("click", () => {
   profileSidebar.classList.toggle("active");
   mainNav.classList.remove("active");
 });
+
+// Adjust layout based on screen size
+function adjustLayout() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 768) {
+    // Mobile and Tablet
+    mainNav.classList.remove("active");
+    profileSidebar.classList.add("hidden");
+  } else {
+    // Laptop and Larger Devices
+    mainNav.classList.add("active");
+    profileSidebar.classList.remove("hidden");
+  }
+}
+
+// Listen for window resize events
+window.addEventListener("resize", adjustLayout);
+
+// Initial layout adjustment
+adjustLayout();
